@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Bitaqwa</string>
+    <string name="text_welcome">Assalamualaikum, Rizqi</string>
+    <string name="text_name_pray">Subuh</string>
+    <string name="text_location_pray">Mekkah, Arab Saudi</string>
+    <string name="text_menu_doa">Doa Doa</string>
+    <string name="text_menu_dzikir">Dzikir</string>
+    <string name="text_menu_zakat">Zakat</string>
+    <string name="text_menu_jadwal_sholat">Jadwal\nSholat</string>
+    <string name="text_menu_video_kajian">Video\nKajian</string>
+    <string name="text_inspirasi">Inspirasi</string>
+    <string name="text_jumlah_rupiah">Jumlah Rupiah</string>
+    <string name="text_ok">OK</string>
+</resources>

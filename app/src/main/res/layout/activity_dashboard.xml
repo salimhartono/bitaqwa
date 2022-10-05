@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".dashboard.DashboardActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_header"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bg_header_dashboard_morning"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_welcome"
+            android:layout_width="151dp"
+            android:layout_height="19dp"
+            android:text="@string/text_welcome"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_header"
+            app:layout_constraintEnd_toEndOf="@+id/iv_header"
+            app:layout_constraintStart_toStartOf="@id/iv_header"
+            app:layout_constraintTop_toTopOf="@id/iv_header" />
+
+        <HorizontalScrollView
+            android:id="@+id/list_menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:background="@drawable/bg_rounded_menu"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_header">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingEnd="20dp">
+
+                <!-- icon menu doa -->
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/iv_icon_menu_doa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_menu_doa"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_ket_doa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semi_bold"
+                    android:text="@string/text_menu_doa"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="@id/iv_icon_menu_doa"
+                    app:layout_constraintStart_toStartOf="@+id/iv_icon_menu_doa"
+                    app:layout_constraintTop_toBottomOf="@+id/iv_icon_menu_doa" />
+
+                <!-- icon menu dzikir -->
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/iv_icon_menu_dzikir"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_menu_dzikir"
+                    app:layout_constraintStart_toEndOf="@id/iv_icon_menu_doa"
+                    android:layout_marginStart="24dp"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_ket_dzikir"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semi_bold"
+                    android:text="@string/text_menu_dzikir"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="@id/iv_icon_menu_dzikir"
+                    app:layout_constraintStart_toStartOf="@+id/iv_icon_menu_dzikir"
+                    app:layout_constraintTop_toBottomOf="@+id/iv_icon_menu_dzikir" />
+
+                <!-- icon menu dzakat -->
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/iv_icon_menu_zakat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_menu_zakat"
+                    app:layout_constraintStart_toEndOf="@id/iv_icon_menu_dzikir"
+                    android:layout_marginStart="24dp"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_ket_dzakat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semi_bold"
+                    android:text="@string/text_menu_zakat"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="@id/iv_icon_menu_zakat"
+                    app:layout_constraintStart_toStartOf="@+id/iv_icon_menu_zakat"
+                    app:layout_constraintTop_toBottomOf="@+id/iv_icon_menu_zakat" />
+
+                <!-- icon menu jadwal sholat -->
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/iv_icon_menu_jadwal_sholat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_menu_jadwal_sholat"
+                    app:layout_constraintStart_toEndOf="@id/iv_icon_menu_zakat"
+                    android:layout_marginStart="24dp"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_ket_sholat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semi_bold"
+                    android:text="@string/text_menu_jadwal_sholat"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="@id/iv_icon_menu_jadwal_sholat"
+                    app:layout_constraintStart_toStartOf="@+id/iv_icon_menu_jadwal_sholat"
+                    app:layout_constraintTop_toBottomOf="@+id/iv_icon_menu_jadwal_sholat" />
+
+                <!-- icon menu video kajian -->
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/iv_icon_menu_video_kajian"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_menu_video_kajian"
+                    app:layout_constraintStart_toEndOf="@id/iv_icon_menu_jadwal_sholat"
+                    android:layout_marginStart="24dp"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_ket_video_kajian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semi_bold"
+                    android:text="@string/text_menu_video_kajian"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="@id/iv_icon_menu_video_kajian"
+                    app:layout_constraintStart_toStartOf="@+id/iv_icon_menu_video_kajian"
+                    app:layout_constraintTop_toBottomOf="@+id/iv_icon_menu_video_kajian" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </HorizontalScrollView>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_inspirations"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/list_menu"
+            app:layout_constraintLeft_toLeftOf="@id/list_menu"
+            android:layout_marginTop="20dp"
+            android:text="@string/text_inspirasi"
+            android:textSize="14sp"
+            android:textColor="@color/colorText"
+            android:fontFamily="@font/poppins_semi_bold"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_inpirations"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            app:layout_constraintTop_toBottomOf="@id/tv_inspirations"
+            app:layout_constraintLeft_toLeftOf="@id/tv_inspirations"
+            tools:listitem="@layout/item_row_inspirations"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
