@@ -12,4 +12,9 @@
     <string name="text_jumlah_rupiah">Jumlah Rupiah</string>
     <string name="text_ok">OK</string>
     <string name="text_pagi_malam"><![CDATA[Pagi & Malam]]></string>
+    <string name="keluar_rumah">Keluar Rumah</string>
+    <string name="makan_dan_minum"><![CDATA[Makan & Minum]]></string>
+    <string name="text_perjalanan">Perjalanan</string>
+    <string name="text_etika_baik">Etika Baik</string>
+    <string name="text_sholat">Sholat</string>
 </resources>

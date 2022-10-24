@@ -92,7 +92,7 @@
             <androidx.appcompat.widget.AppCompatTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/text_pagi_malam"
+                android:text="@string/keluar_rumah"
                 android:textAlignment="center"
                 android:fontFamily="@font/poppins_semi_bold"
                 android:textColor="@color/colorText"
@@ -131,7 +131,7 @@
             <androidx.appcompat.widget.AppCompatTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/text_pagi_malam"
+                android:text="@string/makan_dan_minum"
                 android:textAlignment="center"
                 android:fontFamily="@font/poppins_semi_bold"
                 android:textColor="@color/colorText"
@@ -154,7 +154,7 @@
         app:contentPadding="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/card_doa_pagi_malam"
-        app:layout_constraintEnd_toStartOf="@id/card_doa_keluar_rumah">
+        app:layout_constraintEnd_toStartOf="@id/card_doa_sholat">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -165,12 +165,12 @@
             <androidx.appcompat.widget.AppCompatImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/ic_doa_pagi_malam"/>
+                android:src="@drawable/ic_doa_perjalanan"/>
 
             <androidx.appcompat.widget.AppCompatTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/text_pagi_malam"
+                android:text="@string/text_perjalanan"
                 android:textAlignment="center"
                 android:fontFamily="@font/poppins_semi_bold"
                 android:textColor="@color/colorText"
@@ -190,9 +190,9 @@
         android:layout_marginEnd="8dp"
         app:cardCornerRadius="8dp"
         app:contentPadding="16dp"
-        app:layout_constraintStart_toEndOf="@id/card_doa_pagi_malam"
+        app:layout_constraintStart_toEndOf="@id/card_doa_perjalanan"
         app:layout_constraintTop_toTopOf="@id/card_doa_perjalanan"
-        app:layout_constraintEnd_toStartOf="@id/card_doa_makan_minum">
+        app:layout_constraintEnd_toStartOf="@id/card_doa_etika">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -203,12 +203,12 @@
             <androidx.appcompat.widget.AppCompatImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/ic_doa_rumah"/>
+                android:src="@drawable/ic_doa_sholat"/>
 
             <androidx.appcompat.widget.AppCompatTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/text_pagi_malam"
+                android:text="@string/text_sholat"
                 android:textAlignment="center"
                 android:fontFamily="@font/poppins_semi_bold"
                 android:textColor="@color/colorText"
@@ -228,7 +228,7 @@
         android:layout_marginEnd="8dp"
         app:cardCornerRadius="8dp"
         app:contentPadding="16dp"
-        app:layout_constraintStart_toEndOf="@id/card_doa_keluar_rumah"
+        app:layout_constraintStart_toEndOf="@id/card_doa_sholat"
         app:layout_constraintTop_toTopOf="@id/card_doa_sholat"
         app:layout_constraintEnd_toEndOf="parent">
 
@@ -241,12 +241,12 @@
             <androidx.appcompat.widget.AppCompatImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/ic_doa_makanan_minuman"/>
+                android:src="@drawable/ic_doa_etika_baik"/>
 
             <androidx.appcompat.widget.AppCompatTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/text_pagi_malam"
+                android:text="@string/text_etika_baik"
                 android:textAlignment="center"
                 android:fontFamily="@font/poppins_semi_bold"
                 android:textColor="@color/colorText"
