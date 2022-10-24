@@ -6,4 +6,255 @@
     android:layout_height="match_parent"
     tools:context=".menus.doa.MenuDoaActivity">
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tb_menu_doa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@color/colorPrimary"
+        app:navigationIcon="@drawable/ic_baseline_arrow_back_ios_24"
+        app:title="@string/text_menu_doa"
+        app:titleTextColor="@color/colorWhite"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bg_header_doa"
+        app:layout_constraintTop_toBottomOf="@id/tb_menu_doa"/>
+
+    <!-- card doa pagi dam malam -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_doa_pagi_malam"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        app:cardCornerRadius="8dp"
+        app:contentPadding="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_header"
+        app:layout_constraintEnd_toStartOf="@id/card_doa_keluar_rumah">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_doa_pagi_malam"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_pagi_malam"
+                android:textAlignment="center"
+                android:fontFamily="@font/poppins_semi_bold"
+                android:textColor="@color/colorText"
+                android:lines="2"
+                android:layout_marginTop="8dp"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- card doa keluar rumah -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_doa_keluar_rumah"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        app:cardCornerRadius="8dp"
+        app:contentPadding="16dp"
+        app:layout_constraintStart_toEndOf="@id/card_doa_pagi_malam"
+        app:layout_constraintTop_toBottomOf="@id/iv_header"
+        app:layout_constraintEnd_toStartOf="@id/card_doa_makan_minum">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_doa_rumah"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_pagi_malam"
+                android:textAlignment="center"
+                android:fontFamily="@font/poppins_semi_bold"
+                android:textColor="@color/colorText"
+                android:lines="2"
+                android:layout_marginTop="8dp"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- card doa makan dan minum -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_doa_makan_minum"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        app:cardCornerRadius="8dp"
+        app:contentPadding="16dp"
+        app:layout_constraintStart_toEndOf="@id/card_doa_keluar_rumah"
+        app:layout_constraintTop_toBottomOf="@id/iv_header"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_doa_makanan_minuman"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_pagi_malam"
+                android:textAlignment="center"
+                android:fontFamily="@font/poppins_semi_bold"
+                android:textColor="@color/colorText"
+                android:lines="2"
+                android:layout_marginTop="8dp"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- card doa pagi dam malam -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_doa_perjalanan"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        app:cardCornerRadius="8dp"
+        app:contentPadding="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/card_doa_pagi_malam"
+        app:layout_constraintEnd_toStartOf="@id/card_doa_keluar_rumah">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_doa_pagi_malam"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_pagi_malam"
+                android:textAlignment="center"
+                android:fontFamily="@font/poppins_semi_bold"
+                android:textColor="@color/colorText"
+                android:lines="2"
+                android:layout_marginTop="8dp"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- card doa keluar rumah -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_doa_sholat"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        app:cardCornerRadius="8dp"
+        app:contentPadding="16dp"
+        app:layout_constraintStart_toEndOf="@id/card_doa_pagi_malam"
+        app:layout_constraintTop_toTopOf="@id/card_doa_perjalanan"
+        app:layout_constraintEnd_toStartOf="@id/card_doa_makan_minum">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_doa_rumah"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_pagi_malam"
+                android:textAlignment="center"
+                android:fontFamily="@font/poppins_semi_bold"
+                android:textColor="@color/colorText"
+                android:lines="2"
+                android:layout_marginTop="8dp"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- card doa makan dan minum -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_doa_etika"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        app:cardCornerRadius="8dp"
+        app:contentPadding="16dp"
+        app:layout_constraintStart_toEndOf="@id/card_doa_keluar_rumah"
+        app:layout_constraintTop_toTopOf="@id/card_doa_sholat"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_doa_makanan_minuman"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_pagi_malam"
+                android:textAlignment="center"
+                android:fontFamily="@font/poppins_semi_bold"
+                android:textColor="@color/colorText"
+                android:lines="2"
+                android:layout_marginTop="8dp"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

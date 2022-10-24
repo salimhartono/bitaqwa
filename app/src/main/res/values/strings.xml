@@ -11,4 +11,5 @@
     <string name="text_inspirasi">Inspirasi</string>
     <string name="text_jumlah_rupiah">Jumlah Rupiah</string>
     <string name="text_ok">OK</string>
+    <string name="text_pagi_malam"><![CDATA[Pagi & Malam]]></string>
 </resources>

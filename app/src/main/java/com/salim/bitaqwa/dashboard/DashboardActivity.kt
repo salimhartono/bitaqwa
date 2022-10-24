@@ -3,7 +3,11 @@ package com.salim.bitaqwa.dashboard
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.salim.bitaqwa.R
+import com.salim.bitaqwa.dashboard.adapter.InpirationListAdapter
+import com.salim.bitaqwa.dashboard.data.InspirationData
+import com.salim.bitaqwa.dashboard.model.InspirationModel
 import com.salim.bitaqwa.databinding.ActivityDashboardBinding
 import com.salim.bitaqwa.menus.doa.MenuDoaActivity
 import com.salim.bitaqwa.menus.dzikir.MenuDzikirActivity
@@ -24,6 +28,18 @@ class DashboardActivity : AppCompatActivity() {
         //function menu navigasi
         initMenu()
 
+        //function menampilkan list inspirations
+        initRecylerViewInpiration()
+
+    }
+
+    private fun initRecylerViewInpiration() {
+        val list : ArrayList<InspirationModel> = arrayListOf()
+        binding.rvInpirations.setHasFixedSize(true)
+        list.addAll(InspirationData.listData)
+        binding.rvInpirations.layoutManager = LinearLayoutManager(this)
+        val listAdapter = InpirationListAdapter(list)
+        binding.rvInpirations.adapter = listAdapter
     }
 
     private fun initMenu() {
