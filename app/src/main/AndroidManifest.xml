@@ -14,7 +14,10 @@
         android:theme="@style/Theme.BitaqwaApp"
         tools:targetApi="31">
         <activity
-            android:name=".DetailDoaActivity"
+            android:name=".menus.doa.ListDoaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".menus.doa.DetailDoaActivity"
             android:exported="false" />
         <activity
             android:name=".menus.doa.MenuDoaActivity"
