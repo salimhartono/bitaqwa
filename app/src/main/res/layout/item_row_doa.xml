@@ -8,7 +8,7 @@
     app:cardCornerRadius="8dp"
     app:cardElevation="8dp">
 
-    <!-- halaman row-->
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
