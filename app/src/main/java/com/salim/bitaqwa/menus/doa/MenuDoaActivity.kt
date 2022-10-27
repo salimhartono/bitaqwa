@@ -3,6 +3,7 @@ package com.salim.bitaqwa.menus.doa
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.MenuItem
 import com.salim.bitaqwa.R
 import com.salim.bitaqwa.databinding.ActivityMenuDoaBinding
 
@@ -73,5 +74,14 @@ class MenuDoaActivity : AppCompatActivity() {
         }
 
 
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when(item.itemId){
+            android.R.id.home -> {
+                finish()
+            }
+        }
+        return super.onOptionsItemSelected(item)
     }
 }
