@@ -32,6 +32,7 @@ class ListDoaActivity : AppCompatActivity() {
 
     }
 
+
     private fun initRecyclerView() {
         val list : ArrayList<DoaModel> = arrayListOf()
         //setting title sesuai menu
