@@ -81,46 +81,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/iv_icon_location">
 
-            <androidx.appcompat.widget.AppCompatTextView
-                android:id="@+id/tv_pray_imsak"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/poppins_medium"
-                android:text="Imsak"
-                android:textColor="@color/colorText"
-                app:layout_constraintBottom_toBottomOf="@id/iv_pray_imsak"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@id/iv_pray_imsak" />
-
-            <androidx.appcompat.widget.AppCompatTextView
-                android:id="@+id/tv_pray_time_imsak"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="16dp"
-                android:fontFamily="@font/poppins_medium"
-                android:text="00:00"
-                android:textColor="@color/colorText"
-                app:layout_constraintBottom_toBottomOf="@id/iv_pray_imsak"
-                app:layout_constraintEnd_toStartOf="@id/iv_pray_imsak"
-                app:layout_constraintTop_toTopOf="@id/iv_pray_imsak" />
-
-            <androidx.appcompat.widget.AppCompatImageView
-                android:id="@+id/iv_pray_imsak"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/img_clock"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <View
-                android:id="@+id/divider_imsak"
-                android:layout_width="match_parent"
-                android:layout_height="2dp"
-                android:layout_marginTop="16dp"
-                android:background="#C5E6DB"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/iv_pray_imsak" />
 
             <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/tv_pray_subuh"
@@ -134,7 +94,7 @@
                 app:layout_constraintTop_toTopOf="@id/iv_pray_subuh" />
 
             <androidx.appcompat.widget.AppCompatTextView
-                android:id="@+id/tv_pray_time_subuh"
+                android:id="@+id/tv_subuh"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="16dp"
@@ -149,10 +109,9 @@
                 android:id="@+id/iv_pray_subuh"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
                 android:src="@drawable/img_clock"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/divider_imsak" />
+                app:layout_constraintTop_toTopOf="parent" />
 
             <View
                 android:id="@+id/divider_subuh"
@@ -374,5 +333,6 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
