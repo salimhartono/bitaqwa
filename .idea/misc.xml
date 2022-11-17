@@ -6,18 +6,22 @@
         <entry key="..\:/Users/Lenovo/Documents/Android/Bitaqwa/app/src/main/res/drawable/bg_rounded_doa.xml" value="0.1" />
         <entry key="..\:/Users/Lenovo/Documents/Android/Bitaqwa/app/src/main/res/drawable/bg_rounded_zakat_cost.xml" value="0.1" />
         <entry key="..\:/Users/Lenovo/Documents/Android/Bitaqwa/app/src/main/res/drawable/bg_rounded_zakat_total.xml" value="0.1" />
+        <entry key="..\:/Users/Lenovo/Documents/Android/Bitaqwa/app/src/main/res/drawable/ic_baseline_share_24.xml" value="0.101" />
         <entry key="..\:/Users/Lenovo/Documents/Android/Bitaqwa/app/src/main/res/layout/activity_dashboard.xml" value="0.18952618453865336" />
         <entry key="..\:/Users/Lenovo/Documents/Android/Bitaqwa/app/src/main/res/layout/activity_detail_doa.xml" value="0.5" />
+        <entry key="..\:/Users/Lenovo/Documents/Android/Bitaqwa/app/src/main/res/layout/activity_detail_video_kajian.xml" value="0.25" />
         <entry key="..\:/Users/Lenovo/Documents/Android/Bitaqwa/app/src/main/res/layout/activity_list_doa.xml" value="0.16547066272688898" />
         <entry key="..\:/Users/Lenovo/Documents/Android/Bitaqwa/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/Lenovo/Documents/Android/Bitaqwa/app/src/main/res/layout/activity_menu_doa.xml" value="0.22" />
         <entry key="..\:/Users/Lenovo/Documents/Android/Bitaqwa/app/src/main/res/layout/activity_menu_dzikir.xml" value="0.22" />
         <entry key="..\:/Users/Lenovo/Documents/Android/Bitaqwa/app/src/main/res/layout/activity_menu_jadwal_sholat.xml" value="0.25" />
+        <entry key="..\:/Users/Lenovo/Documents/Android/Bitaqwa/app/src/main/res/layout/activity_menu_video_kajian.xml" value="0.1675929884566054" />
         <entry key="..\:/Users/Lenovo/Documents/Android/Bitaqwa/app/src/main/res/layout/activity_menu_zakat.xml" value="0.33" />
         <entry key="..\:/Users/Lenovo/Documents/Android/Bitaqwa/app/src/main/res/layout/item_row_doa.xml" value="0.1675929884566054" />
         <entry key="..\:/Users/Lenovo/Documents/Android/Bitaqwa/app/src/main/res/layout/item_row_inspirations.xml" value="0.21" />
+        <entry key="..\:/Users/Lenovo/Documents/Android/Bitaqwa/app/src/main/res/layout/item_row_video_kajian.xml" value="0.1675929884566054" />
         <entry key="..\:/Users/Lenovo/Documents/Android/Bitaqwa/app/src/main/res/layout/praktik.xml" value="0.33" />
-        <entry key="..\:/Users/Lenovo/Documents/Android/Bitaqwa/app/src/main/res/menu/menu_zakat.xml" value="0.5" />
+        <entry key="..\:/Users/Lenovo/Documents/Android/Bitaqwa/app/src/main/res/menu/menu_zakat.xml" value="0.33" />
       </map>
     </option>
   </component>

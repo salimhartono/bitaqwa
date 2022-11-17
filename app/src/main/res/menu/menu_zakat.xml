@@ -11,12 +11,12 @@
         <menu>
             <item
                 android:id="@+id/pengertian_zakat"
-                android:title="Menghitung Zakat Manual"
+                android:title="@string/zakat_manual"
                 app:showAsAction="never"/>
 
             <item
-                android:id="@+id/apa_itu_zakat"
-                android:title="Kewajiban Zakat"
+                android:id="@+id/info"
+                android:title="@string/info"
                 app:showAsAction="never"/>
 
         </menu>

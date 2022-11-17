@@ -20,4 +20,6 @@
     <string name="API_KEY">6c3337e4157abee71e8bdb4b4317e273</string>
     <string name="empt_city">Unknown City</string>
     <string name="text_total_harta">Total Harta</string>
+    <string name="zakat_manual">Zakat Manual</string>
+    <string name="info">Info</string>
 </resources>

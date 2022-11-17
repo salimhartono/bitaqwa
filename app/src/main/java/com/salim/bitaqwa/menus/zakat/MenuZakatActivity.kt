@@ -2,6 +2,7 @@ package com.salim.bitaqwa.menus.zakat
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Menu
 import android.view.MenuItem
 import android.widget.Toast
 import com.salim.bitaqwa.R
@@ -49,7 +50,11 @@ class MenuZakatActivity : AppCompatActivity() {
         }
     }
 
-
+    //function for set menu
+    override fun onCreateOptionsMenu(menu: Menu): Boolean {
+        menuInflater.inflate(R.menu.menu_zakat, menu)
+        return super.onCreateOptionsMenu(menu)
+    }
 
 
     //kasih action back
@@ -58,6 +63,10 @@ class MenuZakatActivity : AppCompatActivity() {
             android.R.id.home -> {
                 finish()
             }
+
+            R.id.pengertian_zakat -> Toast.makeText(this, "ini adalah toas pengertian zakat", Toast.LENGTH_SHORT).show()
+            R.id.info -> Toast.makeText(this, "ini adalah toas info", Toast.LENGTH_SHORT).show()
+
         }
         return super.onOptionsItemSelected(item)
     }
